@@ -1,14 +1,17 @@
+#include "main.h"
+
 /**
- * get_endianness - a function that checks ion iNelson osn 
- *                  architecture is little endian
- *                  or big endian
+ * get_endianness - checks the endianness
  *
- * Return: 1 if little endian or 0 if big endian
-*/
+ * Return: 0 Nelson ndian, 1 if little endian
+ */
 int get_endianness(void)
 {
-	unsigned int num = 1;
-	char *c = (char *) &num;
+	unsigned int x;
+	char *c;
 
-	return (c[0]);
+	x = 1;
+	c = (char *) &x;
+
+	return ((int)*c);
 }
