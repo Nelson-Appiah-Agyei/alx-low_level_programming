@@ -13,11 +13,11 @@ unsigned int _atoi(char c)
 }
 
 /**
- * _strlen - gets tf a string
+ * _strlen - gets the length of a string
  *
- * @str: striinput
+ * @str: string input
  *
- * Return: strinength
+ * Return: string length
 */
 unsigned int _strlen(const char *str)
 {
@@ -29,7 +29,7 @@ unsigned int _strlen(const char *str)
 }
 
 /**
- * binary_to_uint - a function that Nelson  binary number
+ * binary_to_uint - a function that converts a binary number
  *                  to an unsigned int
  *
  * @b: string that contains 0 and 1 characters
